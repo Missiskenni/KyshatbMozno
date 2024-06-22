@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:text="Зарегистрируйтесь"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="@color/newBlack"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/newBlack"
+                android:text="Почта"/>
+            <EditText
+                android:id="@+id/emailRegister"
+                android:layout_width="wrap_content"
+                android:inputType="textEmailAddress"
+                android:layout_height="wrap_content"
+                android:textColor="@color/newBlack"
+                android:ems="10"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/newBlack"
+                android:text="Имя"/>
+            <EditText
+                android:id="@+id/nameRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/newBlack"
+                android:inputType="textPersonName"
+                android:ems="10"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/newBlack"
+                android:text="Телефон"/>
+
+            <EditText
+                android:id="@+id/phoneRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="phone"
+                android:textColor="@color/newBlack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Пароль"
+                android:textColor="@color/newBlack" />
+            <EditText
+                android:id="@+id/passwordRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/newBlack"
+                android:inputType="textPassword"
+                android:ems="10" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Повторите пароль"
+                android:textColor="@color/newBlack" />
+            <EditText
+                android:id="@+id/passwordAgainRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/newBlack"
+                android:inputType="textPassword"
+                android:ems="10" />
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:textColor="@color/newBlack"
+                android:background="@drawable/btn_sign_in"
+                android:text="Регистрация" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Уже зарегестрированы?"
+                android:textColor="@color/newBlack"
+                android:gravity="center"
+                android:textSize="18dp"
+                />
+            <TextView android:id="@+id/lnkSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Войдите!"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textColor="#58A5F1"
+                />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</RelativeLayout>

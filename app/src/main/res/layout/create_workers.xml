@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:text="Зарегистрируйте"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="@color/newBlack"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/nameRestWorker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Название ресторана"
+                android:textSize="18dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/newBlack"
+                />
+
+            <Spinner
+                android:id="@+id/spinRestsWorker"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/newBlack"
+                android:text="Почта"/>
+            <EditText
+                android:id="@+id/emailRegisterWorker"
+                android:layout_width="wrap_content"
+                android:inputType="textEmailAddress"
+                android:layout_height="wrap_content"
+                android:textColor="@color/newBlack"
+                android:ems="10"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/newBlack"
+                android:text="Имя"/>
+            <EditText
+                android:id="@+id/nameRegisterWorker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/newBlack"
+                android:inputType="textPersonName"
+                android:ems="10"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/newBlack"
+                android:text="Телефон"/>
+
+            <EditText
+                android:id="@+id/phoneRegisterWorker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="phone"
+                android:textColor="@color/newBlack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Пароль"
+                android:textColor="@color/newBlack" />
+            <EditText
+                android:id="@+id/passwordRegisterWorker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/newBlack"
+                android:inputType="textPassword"
+                android:ems="10" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Повторите пароль"
+                android:textColor="@color/newBlack" />
+            <EditText
+                android:id="@+id/passwordAgainRegisterWorker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/newBlack"
+                android:inputType="textPassword"
+                android:ems="10" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.cardview.widget.CardView>

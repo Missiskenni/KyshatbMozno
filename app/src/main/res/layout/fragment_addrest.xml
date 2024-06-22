@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.addrest.AddRestFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Добавление ресторана"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/newBlack"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Название ресторана"
+            android:textSize="18dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/newBlack"
+            />
+        <EditText
+            android:id="@+id/nameOfRest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Теги ресторана"
+            android:textSize="18dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/newBlack"
+            />
+        <EditText
+            android:id="@+id/descOfRest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Фото ресторана"
+            android:textSize="18dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/newBlack"
+            />
+        <Button
+            android:id="@+id/btnPhotoOfRest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_sign_in"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:text="Выберите фото"/>
+
+        <ImageView
+            android:id="@+id/photoRest"
+            android:layout_marginTop="5dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/rest_def"/>
+
+        <Button
+            android:id="@+id/btnCreateRest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_create_rest"
+            android:layout_marginTop="30dp"
+            android:padding="5dp"
+            android:text="Создать ресторан"/>
+    </LinearLayout>
+
+</RelativeLayout>

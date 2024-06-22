@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/txtsure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/newBlack"
+            android:textSize="16sp"
+            android:text="Вы уверены в заказе на сумму "/>
+        <TextView
+            android:id="@+id/totalPriceOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/newBlack"
+            android:layout_toEndOf="@+id/txtsure"
+            android:textSize="16sp"
+            android:text="X"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/newBlack"
+            android:layout_toEndOf="@+id/totalPriceOrder"
+            android:textSize="16sp"
+            android:text="р?"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="30dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/newBlack"
+                android:text="Почта:"/>
+            <TextView
+                android:id="@+id/yourEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:textSize="18sp"
+                android:textColor="@color/newBlack"
+                android:text="почта"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/newBlack"
+                android:text="Имя:"/>
+            <TextView
+                android:id="@+id/yourName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:textSize="18sp"
+                android:textColor="@color/newBlack"
+                android:text="имя"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/newBlack"
+                android:text="Телефон:"/>
+            <TextView
+                android:id="@+id/yourPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:textSize="18sp"
+                android:textColor="@color/newBlack"
+                android:text="телефон"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/newBlack"
+                android:text="Адрес:"/>
+            <TextView
+                android:id="@+id/yourAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:textSize="18sp"
+                android:textColor="@color/newBlack"
+                android:text="адрес"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/newBlack"
+                android:text="Карта:"/>
+            <TextView
+                android:id="@+id/yourCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:textSize="18sp"
+                android:textColor="@color/newBlack"
+                android:text="карта"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnViewOrders"
+            android:layout_marginTop="10dp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="История заказов"
+            android:background="@drawable/btn_create_rest"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <Button
+                android:id="@+id/btnChangeInfo"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Изменить данные"
+                android:background="@drawable/btn_sign_in"/>
+            <Button
+                android:id="@+id/btnChangePass"
+                android:layout_marginStart="20dp"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Изменить пароль"
+                android:background="@drawable/btn_sign_in"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <Button
+                android:id="@+id/btnAddAddress"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Добавить адресс"
+                android:background="@drawable/btn_sign_in"/>
+            <Button
+                android:id="@+id/btnAddCard"
+                android:layout_marginStart="20dp"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Добавить карту"
+                android:background="@drawable/btn_sign_in"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

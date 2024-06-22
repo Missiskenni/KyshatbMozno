@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvNameOfUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/newBlack"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:textSize="20sp"
+                android:text="Василий"/>
+
+            <RatingBar
+                android:id="@+id/ratingRestOfFeedback"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:clickable="false"
+                android:isIndicator="true"
+                android:numStars="5" />
+
+            <TextView
+                android:id="@+id/tvDateOfFeedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/newBlack"
+                android:layout_gravity="center"
+                android:layout_marginStart="90dp"
+                android:textSize="18sp"
+                android:text="16:10:2024"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/btw_yellow_and_orange"
+            android:layout_below="@+id/photoRestMain"
+            android:orientation="horizontal" />
+        <TextView
+            android:id="@+id/tvTextOfFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/newBlack"
+            android:textSize="14sp"
+            android:text="Здесь будет отзыв"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
